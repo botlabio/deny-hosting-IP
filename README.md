@@ -1,5 +1,5 @@
 # deny-hosting-IP
-#### A system for anyone to easily identify / block over 130,000,000 cloud and hosting company IP addresses.
+#### A system for anyone to easily identify over 130,000,000 cloud and hosting company IP addresses.
 
 In 2014 Darkreading.com reported use of freely available cloud/hosting resources for malice in an article titled "CloudBot: A Free, Malwareless Alternative To Traditional Botnets"[[1]](http://www.darkreading.com/cloudbot-a-free-malwareless-alternative-to-traditional-botnets/d/d-id/1297878) based on research by BishopFox researchers[[2]](https://www.youtube.com/watch?v=cpUtYq4SJKA) Rob Ragan and Oscar Salazar. I highly recommend reading the article, and watching the video.  
 
