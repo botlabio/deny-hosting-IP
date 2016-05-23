@@ -52,8 +52,6 @@ Or if you want to run multiple queries one after another going through a list of
 
 ### references
 
-CloudBot: A Free, Malwareless Alternative To Traditional Botnets
-[1]http://www.darkreading.com/cloudbot-a-free-malwareless-alternative-to-traditional-botnets/d/d-id/1297878
+[1] CloudBot: A Free, Malwareless Alternative To Traditional Botnets - http://www.darkreading.com/cloudbot-a-free-malwareless-alternative-to-traditional-botnets/d/d-id/1297878
 
-Black Hat USA 2014 - CloudBots - Harvesting Crypto Coins like a Botnet Farmer - 06Aug2014
-[2]https://www.youtube.com/watch?v=cpUtYq4SJKA
+[2] Black Hat USA 2014 - CloudBots - Harvesting Crypto Coins like a Botnet Farmer - https://www.youtube.com/watch?v=cpUtYq4SJKA
