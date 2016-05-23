@@ -36,12 +36,13 @@ If you get the result, then everything should be ok.
 
 You can run a single query directly from the command line using: 
 
+    mysql -u USER -pPASSWORD -h localhost hosting_ip -e "SELECT * FROM blacklist WHERE ip='1.160.0.183'";
     
+Or if you want to run multiple queries one after another going through a list of IPs: 
 
+    while read IP; do mysql -u USER -pPASSWORD -h localhost hosting_ip -e "SELECT * FROM blacklist WHERE ip='$IP'" >> results.txt; done <list_of_ips.txt
 
-
-
-
+### references
 
 [1]http://www.darkreading.com/cloudbot-a-free-malwareless-alternative-to-traditional-botnets/d/d-id/1297878
 [2]https://www.youtube.com/watch?v=cpUtYq4SJKA
