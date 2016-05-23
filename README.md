@@ -10,9 +10,35 @@ Fast forward 2 years and "cloudbots" play a crucial role in fuelling sourced tra
 - mysql 
 - prips (https://gitlab.com/prips/prips)
 
-Other than these two dependencies, this git includes everything else you need. 
+Other than these two dependencies, this git includes everything else you need. You could of course use any other db you like, and it's probably better to do it. For the sake of simplicity, here we provide a way even those without programming background can easily do it. 
 
 ### getting started 
+
+1) copy the cidr.txt file in to your /tmp folder (so mysql can access it later)
+2) run the command to expand the CIDR notation to invididual IP addresses: 
+    
+    while read CIDR; do prips "$CIDR" >> ip.txt; done <cidr.txt
+
+3) login to mysql and excecute the following commands to create a database with one table: 
+
+    CREATE DATABASE hosting_ip;
+    USE hosting_ip;
+    CREATE TABLE blacklist (ip VARCHAR(15) NOT NULL PRIMARY KEY);
+    LOAD DATA INFILE '/tmp/ip.txt' INTO TABLE blacklist;
+
+Depending on your system, this might take a little bit of time because there are a total of +130 million rows at the moment and this will grow as we keep updating the cidr.txt file. 
+
+4) test that the creating of the database have been succesful: 
+
+   SELECT * FROM blacklist WHERE ip='1.160.0.183';
+   
+If you get the result, then everything should be ok. 
+
+You can run a single query directly from the command line using: 
+
+    
+
+
 
 
 
