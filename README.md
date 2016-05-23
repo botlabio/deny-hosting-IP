@@ -36,7 +36,7 @@ Depending on your system, this might take a little bit of time because there are
 
 4) test that the creating of the database have been succesful: 
 
-   SELECT * FROM blacklist WHERE ip='1.160.0.183';
+    SELECT * FROM blacklist WHERE ip='1.160.0.183';
    
 If you get the result, then everything should be ok. 
 
