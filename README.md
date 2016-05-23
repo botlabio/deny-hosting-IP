@@ -5,6 +5,12 @@ In 2014 Darkreading.com reported use of freely available cloud/hosting resources
 
 Fast forward 2 years and "cloudbots" play a crucial role in fuelling sourced traffic market at the heart of the +$10 billion per year ad fraud wave. Depending on the publisher or ad platform, cloudbots usually represent upwards from 1% of total traffic. It is therefore alone a problem in the 9-figure (dollar) range. The good news is that allowing cloudbots to thrive in the online advertising eco-system is easy to stop, by systematically blocking traffic from hosting company IP ranges at both publisher and ad platform level. Here is an easy and low-cost way of starting to do it. 
 
+### what does this list cover? 
+
+- most of the IP addresses owned by top100 hosting/cloud companies 
+- most of the IP addresses in use by Google App Engine and content delivery 
+- most of the IP addresses in use by AWS
+
 ### dependencies 
 
 - mysql 
