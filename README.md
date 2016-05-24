@@ -62,6 +62,16 @@ Or if you want to run multiple queries one after another going through a list of
 
     while read IP; do mysql -u USER -pPASSWORD -h localhost hosting_ip -e "SELECT * FROM blacklist WHERE ip='$IP'" >> results.txt; done <list_of_ips.txt
 
+### FAQ
+
+QUESTION: Is there any chance that using this list could block human traffic?
+
+ANSWER: While hosting company IP addresses are sometimes used as proxies, this use-case is neglible compared to cloudbot and other non-human traffic coming from hosting company IP addresses. 
+
+QUESTION: Will you be able to track how many people deploy it?
+
+ANSWER: While we are making this resource available in a way that does not allow us to track usage in anyway, we do engage in on-going "mystery shopping" tests where verification vendors' ability to detect cloudbot traffic is tested without their knowledge. Results are reported to the accreditation bodies such as MRC and TAG, and to advertiser associtions such as WFA, ANA and ISBA.
+
 ### references
 
 [1] CloudBot: A Free, Malwareless Alternative To Traditional Botnets - http://www.darkreading.com/cloudbot-a-free-malwareless-alternative-to-traditional-botnets/d/d-id/1297878
