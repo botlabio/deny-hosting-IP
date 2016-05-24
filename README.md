@@ -3,8 +3,6 @@
 
 In 2014 Darkreading.com reported use of freely available cloud/hosting resources for malice in an article titled "CloudBot: A Free, Malwareless Alternative To Traditional Botnets"[[1]](http://www.darkreading.com/cloudbot-a-free-malwareless-alternative-to-traditional-botnets/d/d-id/1297878) based on research by BishopFox researchers[[2]](https://www.youtube.com/watch?v=cpUtYq4SJKA) Rob Ragan and Oscar Salazar. I highly recommend reading the article, and watching the video.  
 
-
-
 Fast forward 2 years and "cloudbots" play a crucial role in fuelling sourced traffic market at the heart of the +$10 billion per year ad fraud wave. Depending on the publisher or ad platform, cloudbots usually represent upwards from 1% of total traffic. It is therefore alone a problem in the 9-figure (dollar) range. The good news is that allowing cloudbots to thrive in the online advertising eco-system is easy to stop, by systematically blocking traffic from hosting company IP ranges at both publisher and ad platform level. Here is an easy and low-cost way of starting to do it. 
 
 ### what does this list cover? 
@@ -22,12 +20,26 @@ Other than these two dependencies, this git includes everything else you need. Y
 
 ### getting started 
 
-1) copy the cidr.txt file in to your /tmp folder (so mysql can access it later)
-2) run the command to expand the CIDR notation to invididual IP addresses: 
+1) Install mysql 
+
+    sudo aptitude upgrade
+    sudo apt-get update
+    sudo apt-get install mysql-server 
     
+2) Install prips 
+
+    sudo apt-get prips
+
+3) copy the cidr.txt file in to your /tmp folder (so mysql can access it later)
+
+    curl https://raw.githubusercontent.com/botlabio/deny-hosting-IP/master/cidr.txt > /tmp/cidr.txt
+    
+4) run the command to expand the CIDR notation to invididual IP addresses: 
+    
+    cd /tmp
     while read CIDR; do prips "$CIDR" >> ip.txt; done <cidr.txt
 
-3) login to mysql and excecute the following commands to create a database with one table: 
+5) login to mysql and excecute the following commands to create a database with one table: 
 
     CREATE DATABASE hosting_ip;
     USE hosting_ip;
@@ -36,7 +48,7 @@ Other than these two dependencies, this git includes everything else you need. Y
 
 Depending on your system, this might take a little bit of time because there are a total of +130 million rows at the moment and this will grow as we keep updating the cidr.txt file. 
 
-4) test that the creating of the database have been succesful: 
+6) test that the creating of the database have been succesful: 
 
     SELECT * FROM blacklist WHERE ip='1.160.0.183';
    
