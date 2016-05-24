@@ -70,7 +70,7 @@ ANSWER: While hosting company IP addresses are sometimes used as proxies, this u
 
 QUESTION: Will you be able to track how many people deploy it?
 
-ANSWER: While we are making this resource available in a way that does not allow us to track usage in anyway, we do engage in on-going "mystery shopping" tests where verification vendors' ability to detect cloudbot traffic is tested without their knowledge. Results are reported to the accreditation bodies such as MRC and TAG, and to advertiser associtions such as WFA, ANA and ISBA.
+ANSWER: While we are making this resource available in a way that does not allow us to track usage in anyway, we do engage in on-going "mystery shopping" tests where verification vendors' ability to detect cloudbot traffic is tested without their knowledge. Results are reported directly to the accreditation bodies such as MRC and TAG, and to advertiser associtions such as WFA, ANA and ISBA.
 
 ### references
 
