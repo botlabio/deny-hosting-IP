@@ -64,13 +64,29 @@ Or if you want to run multiple queries one after another going through a list of
 
 ### FAQ
 
-QUESTION: Is there any chance that using this list could block human traffic?
+**Is there any chance that using this list could block human traffic?**
 
-ANSWER: While hosting company IP addresses are sometimes used as proxies, this use-case is neglible compared to cloudbot and other non-human traffic coming from hosting company IP addresses. 
+While hosting company IP addresses are sometimes used as proxies, this use-case is neglible compared to cloudbot and other non-human traffic coming from hosting company IP addresses. 
 
-QUESTION: Will you be able to track how many people deploy it?
+**Will you be able to track how many people deploy it?**
 
-ANSWER: While we are making this resource available in a way that does not allow us to track usage in anyway, we do engage in on-going "mystery shopping" tests where verification vendors' ability to detect cloudbot traffic is tested without their knowledge. Results are reported directly to the accreditation bodies such as MRC and TAG, and to advertiser associtions such as WFA, ANA and ISBA.
+While we are making this resource available in a way that does not allow us to track usage in anyway, we do engage in on-going "mystery shopping" tests where verification vendors' ability to detect cloudbot traffic is tested without their knowledge. Results are reported directly to the accreditation bodies such as MRC and TAG, and to advertiser associtions such as WFA, ANA and ISBA.
+
+**How would an adtech company use this?**
+
+There are three primary use-cases for this solution:
+
+- for data analysis where it's valuable to know if a single IP is from cloud/hosting company
+- same as above but do it for a lot of IP addresses (for example from a log-file) at one go
+- for pre-bid filtering in a real-time stack (though you'll need a high performance db / system) 
+
+**What is unique about this?**
+
+The list of the IP addresses that cover top100 hosting / cloud companies. Because we give it in CIDR format, it’s just 50kb before you expand it in to a database (according to the instructions on the page). 
+
+**Can this also be used for blocking as opposed to just detecting?**
+
+You could use it just as blacklist by completing jus steps 1-4 above. Then you can use the resulting list as a blacklist. Also you could use the CIDR.txt file or the file resulting from completing steps 1-4 in various ways, for example on a server hosts file. You could also use the system as described above, but then use the detection result to add the IPs to a separate blacklist in your system. 
 
 ### references
 
