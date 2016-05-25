@@ -64,6 +64,14 @@ Or if you want to run multiple queries one after another going through a list of
 
 ### FAQ
 
+**Why is this important?**
+
+Cloudbots are unique in that they can be leveraged at scale by cybercriminals without spreading malware on to user devices first, simply by using cloud and hosting company server resources. While the cost of cloudbots to advertisers is significant, they are easy to stop by systematically blocking traffic from hosting company IP ranges at both publisher and ad platform level. 
+
+**What can adtech companies do with this?**
+
+Using this solution, adtech companies and publishers can easily minimize exposure to cloudbot traffic.   
+
 **Is there any chance that using this list could block human traffic?**
 
 While hosting company IP addresses are sometimes used as proxies, this use-case is neglible compared to cloudbot and other non-human traffic coming from hosting company IP addresses. 
