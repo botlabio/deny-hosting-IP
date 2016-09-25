@@ -131,8 +131,8 @@ You could use it just as blacklist by completing jus steps 1-4 above. Then you c
 
 [2] Black Hat USA 2014 - CloudBots - Harvesting Crypto Coins like a Botnet Farmer - https://www.youtube.com/watch?v=cpUtYq4SJKA
 
-[3] http://mediaratingcouncil.org/GI063015_IVT%20Addendum%20Draft%205.0%20(Public%20Comment).pdf
+[3] Invalid Traffic Detection and Filtration Guidelines Addendum -  http://mediaratingcouncil.org/GI063015_IVT%20Addendum%20Draft%205.0%20(Public%20Comment).pdf
 
-[4] http://www.jicwebs.org/images/JICWEBS_Traffic_Taxonomy_October_2015.pdf
+[4] UK Traffic Taxonomy for Digital Display Advertising -  http://www.jicwebs.org/images/JICWEBS_Traffic_Taxonomy_October_2015.pdf
 
-[5] http://www.slideshare.net/ShailinDhar/mystery-shopping-inside-the-adverification-bubble
+[5] Mystery Shopping Inside the Ad Verification Bubble - http://www.slideshare.net/ShailinDhar/mystery-shopping-inside-the-adverification-bubble
