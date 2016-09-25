@@ -15,19 +15,19 @@ Other reasons for seriously considering data center and cloud IP filtering:
 
 In its recent *Invalid Traffic Detection and Filtration Guidelines Addendum* the definite authority in standards work related to media quality, Media Rating Council says: 
 
-The first, referred to as "General Invalid Traffic", consist of traffic identifed through routine means of filtration. Key examples are: known data-center traffic (determined to be a consistent source of non-human traffic; not including routing artifacts of legitimate users or virtual machines legitimate browsing"[3]. 
+The first, referred to as "General Invalid Traffic", consist of traffic identifed through routine means of filtration. Key examples are: known data-center traffic (determined to be a consistent source of non-human traffic; not including routing artifacts of legitimate users or virtual machines legitimate browsing".[[3]](http://mediaratingcouncil.org/GI063015_IVT%20Addendum%20Draft%205.0%20(Public%20Comment).pdf)
 
 In addition to mentioning data center traffic, bots, spiders and crawlers are also mentioned as forms of 'general' invalid traffic. Requirement for accreditation for vendors is to cover extensively for 'general invalid traffic'. MRC's addendum is the basis for the Interactive Advertising Bureau's vendor accredication on advertising fraud. 
 
 
 ##### (2) Indepdent research found that fake traffic buying may have a strong association with "cloud IPs"
 
-Similar to the US effort by MRC and IAB, UK based JICWEBS have released in 2015 its own Ad Fraud Traffic Taxonomy[4]. The document specifically mentions data-center traffic as "Illigimate and non-human traffic source". 
+Similar to the US effort by MRC and IAB, UK based JICWEBS have released in 2015 its own Ad Fraud Traffic Taxonomy[[4]](http://www.jicwebs.org/images/JICWEBS_Traffic_Taxonomy_October_2015.pdf). The document specifically mentions data-center traffic as "Illigimate and non-human traffic source". 
 
 
 ##### (3) Indepdent research found that fake traffic buying may have a strong association with "cloud IPs"
 
-A recent research paper *Mystery Shopping Inside the Ad Verification Bubble* a researcher was able to demonstrate how he setup sites, connected the sites with monetization partners, bought sub penny per click traffic and drove it to the sites. The results show clearly how much of the traffic, that passed with flying colors through the filters of the best known ad fraud verification vendors Integral Ad Science and Moat, was coming from data center IPs.[5]
+A recent research paper *Mystery Shopping Inside the Ad Verification Bubble* a researcher was able to demonstrate how he setup sites, connected the sites with monetization partners, bought sub penny per click traffic and drove it to the sites. The results show clearly how much of the traffic, that passed with flying colors through the filters of the best known ad fraud verification vendors Integral Ad Science and Moat, was coming from data center IPs.[[5]]( http://www.slideshare.net/ShailinDhar/mystery-shopping-inside-the-adverification-bubble)
 
 
 ##### (4) Various forms of bots, scrapers and crawlers increasingly run on "cloud IPs" 
