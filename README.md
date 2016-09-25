@@ -5,6 +5,35 @@ In 2014 Darkreading.com reported use of freely available cloud/hosting resources
 
 Fast forward 2 years and "cloudbots" play a crucial role in fuelling sourced traffic market at the heart of the +$10 billion per year ad fraud wave. Depending on the publisher or ad platform, cloudbots usually represent upwards from 1% of total traffic. It is therefore alone a problem in the 9-figure (dollar) range. The good news is that allowing cloudbots to thrive in the online advertising eco-system is easy to stop, by systematically blocking traffic from hosting company IP ranges at both publisher and ad platform level. Here is an easy and low-cost way of starting to do it. 
 
+### why is it important to filter out data center and hosting traffic from media inventory
+
+While it can be fairly argued that filtering out data center traffic will result in many "false positives", this argument is not important in the media investment context. First because there is far more inventory (supply) than there is media budget (demand). Second 
+
+Other reasons for seriously considering data center and cloud IP filtering: 
+
+##### (1) Media Rating Council requires it from accredited traffic filtering companies
+
+In its recent *Invalid Traffic Detection and Filtration Guidelines Addendum* the definite authority in standards work related to media quality, Media Rating Council says: 
+
+The first, referred to as "General Invalid Traffic", consist of traffic identifed through routine means of filtration. Key examples are: known data-center traffic (determined to be a consistent source of non-human traffic; not including routing artifacts of legitimate users or virtual machines legitimate browsing"[3]. 
+
+In addition to mentioning data center traffic, bots, spiders and crawlers are also mentioned as forms of 'general' invalid traffic. Requirement for accreditation for vendors is to cover extensively for 'general invalid traffic'. MRC's addendum is the basis for the Interactive Advertising Bureau's vendor accredication on advertising fraud. 
+
+
+##### (2) Indepdent research found that fake traffic buying may have a strong association with "cloud IPs"
+
+Similar to the US effort by MRC and IAB, UK based JICWEBS have released in 2015 its own Ad Fraud Traffic Taxonomy[4]. The document specifically mentions data-center traffic as "Illigimate and non-human traffic source". 
+
+
+##### (3) Indepdent research found that fake traffic buying may have a strong association with "cloud IPs"
+
+A recent research paper *Mystery Shopping Inside the Ad Verification Bubble* a researcher was able to demonstrate how he setup sites, connected the sites with monetization partners, bought sub penny per click traffic and drove it to the sites. The results show clearly how much of the traffic, that passed with flying colors through the filters of the best known ad fraud verification vendors Integral Ad Science and Moat, was coming from data center IPs.[5]
+
+
+##### (4) Various forms of bots, scrapers and crawlers increasingly run on "cloud IPs" 
+
+Most of the programmatic solutions to repeat various tasks run on server machines (and IP), and not home machines. As counter measures against web scraping and other tasks have become more sophisticated, headless browser based solutions to repeat tasks have quickly become the norm. Headless browsers trigger the ads on the sites they visit, in some cases very frequently. 
+
 ### what does this list cover? 
 
 - most of the IP addresses owned by top100 hosting/cloud companies 
@@ -101,3 +130,9 @@ You could use it just as blacklist by completing jus steps 1-4 above. Then you c
 [1] CloudBot: A Free, Malwareless Alternative To Traditional Botnets - http://www.darkreading.com/cloudbot-a-free-malwareless-alternative-to-traditional-botnets/d/d-id/1297878
 
 [2] Black Hat USA 2014 - CloudBots - Harvesting Crypto Coins like a Botnet Farmer - https://www.youtube.com/watch?v=cpUtYq4SJKA
+
+[3] http://mediaratingcouncil.org/GI063015_IVT%20Addendum%20Draft%205.0%20(Public%20Comment).pdf
+
+[4] http://www.jicwebs.org/images/JICWEBS_Traffic_Taxonomy_October_2015.pdf
+
+[5] http://www.slideshare.net/ShailinDhar/mystery-shopping-inside-the-adverification-bubble
