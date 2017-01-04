@@ -54,6 +54,10 @@ Other than these two dependencies, this git includes everything else you need. Y
     sudo aptitude upgrade
     sudo apt-get update
     sudo apt-get install mysql-server 
+
+NOTE: you should harden mysql before moving on: 
+
+    sudo mysql_secure_installation
     
 2) Install prips 
 
